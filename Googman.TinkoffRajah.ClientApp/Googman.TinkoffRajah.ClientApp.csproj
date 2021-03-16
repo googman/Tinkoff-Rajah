@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Googman.TinkoffRajah.Domain\Googman.TinkoffRajah.Domain.csproj" />
+    <ProjectReference Include="..\Googman.TinkoffRajah.Logic\Googman.TinkoffRajah.Logic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="UserControls\CompleteDealsList\CompleteDealsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
